@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusNotes - Collaborative Notes Sharing Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <i data-lucide="book-open"></i> NexusNotes
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Discover</a>
+                <a href="#" class="nav-link">Subjects</a>
+                <a href="#" class="nav-link">Institutions</a>
+            </div>
+            <div class="nav-actions flex gap-4 items-center">
+                <a href="upload.html" class="btn btn-outline">Upload Note</a>
+                <a href="profile.html" class="btn btn-primary">Profile</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Master your studies, together.</h1>
+            <p>Discover, share, and collaborate on high-quality study notes from top students and professionals worldwide.</p>
+            
+            <div class="search-container">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="Search for notes, subjects, or keywords...">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="notes-grid" id="notesContainer">
+            <!-- Notes will be injected here via JS -->
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
